@@ -1,0 +1,83 @@
+body {
+  background: #0278ae;
+  align-content: center;
+  padding: 10px 50px 30px 0;
+}
+
+form {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 100px;
+  padding: 0;
+}
+h1,
+h2,
+h3 {
+  color: #a5ecd7;
+  text-align: center;
+  font-weight: 200;
+}
+span {
+  text-align: center;
+}
+div.col {
+  color: #0278ae;
+}
+
+li {
+  text-align: right;
+  font-weight: 200;
+  font-size: 20px;
+  color: #a5ecd7;
+}
+
+a {
+  color: #a5ecd7;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.unit {
+  color: #e8ffc1;
+}
+.one {
+  border: #a5ecd7;
+}
+.cards {
+  display: block;
+  background-color: #51adcf;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgb(0, 0, 0.3);
+}
+.card {
+  display: block;
+  border-color: #0278ae;
+  background-color: #0278ae;
+  box-shadow: 1px 1px 5px #0278ae;
+  margin: 20px auto;
+}
+div.sun {
+  background: #e8ffc1;
+}
+div.mon {
+  background: #a5ecd7;
+}
+div.tues {
+  background: #e8ffc1;
+}
+div.wed {
+  background: #a5ecd7;
+}
+div.thurs {
+  background: #e8ffc1;
+}
+div.fri {
+  background: #a5ecd7;
+}
+div.sat {
+  background: #e8ffc1;
+}

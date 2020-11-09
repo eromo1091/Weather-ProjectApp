@@ -1,0 +1,161 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/97764efa53.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>SearchEngine</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cards">
+        <div class="card-body">
+          <form id="searchForm">
+            <div class="row">
+              <div class="col-6">
+                <input
+                  id="cityInput"
+                  class="form-control-sm"
+                  type="Search city or Zip code"
+                  placeholder="Search City or Zip code"
+                  autocomplete="off"
+                  autofocus="on"
+                />
+              </div>
+              <div class="clo-3">
+                <button type="button" class="btn btn-primary">Search</button>
+              </div>
+              <div class="col-3">
+                <button
+                  type="button"
+                  id="currentLocationButton"
+                  class="btn btn-success"
+                >
+                  Current
+                </button>
+              </div>
+            </div>
+          </form>
+          <br />
+          <div class="row">
+            <div class="one">
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row-3">
+                      <h1 id="city">Sacramento</h1>
+                    </div>
+                    <br />
+                    <div class="row-3">
+                      <h2>
+                        Sunday, October 4, 2020
+                        <br />
+                        12:30:00
+                      </h2>
+                      <br />
+                      <div class="row-3">
+                        <h3>
+                          <div class="currentTemp">
+                            <span class="temperature" id="cityTemp">90 </span>
+
+                            <span class="unit"
+                              ><a href="#" id="celsiusLink">˚C</a> |
+                              <a href="#" id="fahrenheitLink">˚F</a>
+                            </span>
+                            <br />
+                            <i class="fas fa-cloud-sun"> </i>
+                          </div>
+                          <ul>
+                            <li id="description">Partly Cloudy</li>
+                            <div class="row-3">
+                              <ul>
+                                <li class="row-3">
+                                  Preciption:
+                                  <span id="precipitation"> 0% </span>
+                                </li>
+                                <li class="row-3">
+                                  Humidity:
+                                  <span id="humidity"> % </span>
+                                </li>
+                                <li class="row-3">
+                                  Wind:
+                                  <span id="wind"> km/h </span>
+                                </li>
+                              </ul>
+                            </div>
+                          </ul>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="src/images/Sacramento.jpeg"
+                    class="card-img-bottom"
+                    alt="sacramento"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <span>
+                    <br />
+                    <div class="sun">
+                      <h5>Sunday</h5>
+                      <p>🌤 32˚ C / 90˚ F</p>
+                    </div>
+                    <div class="mon">
+                      <h5>Monday</h5>
+                      <p>⛅️ 29˚ C / 85˚ F</p>
+                    </div>
+                    <div class="tues">
+                      <h5>Tuesday</h5>
+                      <p>🌦 22˚ C / 72˚ F</p>
+                    </div>
+                    <div class="wed">
+                      <h5>Wednesday</h5>
+                      <p>🌦 21˚ C / 71˚ F</p>
+                    </div>
+                    <div class="thurs">
+                      <h5>Thursday</h5>
+                      <p>🌧 20˚ C / 69˚ F</p>
+                    </div>
+                    <div class="fri">
+                      <h5>Friday</h5>
+                      <p>🌩 18˚ C / 65˚ F</p>
+                    </div>
+                    <div class="sat">
+                      <h5>Saturday</h5>
+                      <p>☀️ 25˚ C / 77˚ F</p>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/SearchEngine.js"></script>
+  </body>
+</html>
