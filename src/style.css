@@ -9,7 +9,6 @@ form {
   margin-top: 30px;
   margin-bottom: 30px;
   margin-left: 100px;
-  padding: 0;
 }
 h1,
 h2,
@@ -29,7 +28,10 @@ li {
   text-align: right;
   font-weight: 200;
   font-size: 20px;
+  line-height: 18px;
   color: #a5ecd7;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -40,6 +42,7 @@ ul {
   padding: 0;
   margin: 0;
 }
+
 .sourceCode:hover {
   color: rgb(255, 255, 255);
   transition: all 200ms ease-in-out;
@@ -48,9 +51,7 @@ ul {
 .code {
   color: rgb(255, 255, 255);
 }
-.unit {
-  color: #e8ffc1;
-}
+
 .one {
   border: #a5ecd7;
 }
@@ -59,14 +60,19 @@ ul {
   background-color: #51adcf;
   border-radius: 10px;
   box-shadow: 3px 3px 10px rgb(0, 0, 0.3);
+  padding: 20px 10px;
+  max-width: 600px;
 }
 .card {
   display: block;
   border-color: #0278ae;
   background-color: #0278ae;
   box-shadow: 1px 1px 5px #0278ae;
-  margin: 20px auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 20px;
 }
+
 div.sun {
   background: #e8ffc1;
 }
@@ -87,4 +93,60 @@ div.fri {
 }
 div.sat {
   background: #e8ffc1;
+}
+.currentTemp img {
+  margin-right: 5px;
+  height: 100px;
+  width: 100px;
+}
+
+.currentTemp strong {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 400;
+}
+.currentTemp .unit {
+  color: rgb(33, 33, 33);
+  position: relative;
+  font-size: 16px;
+  top: -9px;
+}
+
+.currentTemp .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+.currentTemp.active:hover {
+  text-decoration: none;
+}
+.weather-forecast {
+  margin-top: 10px;
+}
+
+.weather-forecast h3 {
+  color: rgb(186, 186, 186);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  height: 15px;
+  line-height: 15px;
+  padding-top: 7px;
+}
+
+.weather-forecast img {
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
+}
+
+.weather-forecast-temperature {
+  text-align: center;
+  color: rgb(135, 135, 135);
+  font-size: 13px;
+  font-weight: 400;
+  height: auto;
+  line-height: 15px;
+  white-space: nowrap;
 }
